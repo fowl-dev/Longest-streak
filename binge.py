@@ -1,6 +1,5 @@
 def binge(order):
     k=sorted(order)
-    print(k)
     max_con=[]
     temp=[k[0]]
     for i in range(len(k)-1):
@@ -16,6 +15,6 @@ def binge(order):
     if len(res[0])==1:
         return "No consecutive watch order."
     else:
-        return res[0]
+        return f"Longest proper binge {res[0]}"
 List=eval(input("Watched episodes: "))
 print(binge(List))
